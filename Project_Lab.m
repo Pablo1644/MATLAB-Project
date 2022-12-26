@@ -8,6 +8,9 @@ M = -10;
 dx = 3.45;
 n0 = 1;
 % 1.Extract the field with TPS formulas -> Lab2
+
+objtype = 'phase';
+
 if objtype =='phase'
     folder_name = 'C:\Users\pawel\OneDrive\Dokumenty\2_stopien\2_semestr\Numerical methods in optics\Projekt_Lab';
     data1 = double(imread([folder_name,'holo1.bmp']));
