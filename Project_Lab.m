@@ -22,6 +22,18 @@ if objtype =='phase'
     amp = (1/4)*sqrt(4*(data2-data4).^2 + (2.*data3-data1-data5).^2);
 end
 if objtype =='amplitude'
-    folder_name = 'C:\Users\pawel\OneDrive\Dokumenty\2 stopien\2 semestr\Numerical methods in optics\lab2\autofocusing lab\';
+    folder_name = 'C:\Users\pawel\OneDrive\Dokumenty\2_stopien\2_semestr\Numerical methods in optics\Projekt_Lab';
     data = double(imread([folder_name,'amp.bmp']));
 end    
+
+
+u=amp.*exp(1i*ph); % phase case
+% ROI selection from lab2 for autofocusing method
+ROI = ROISelection(abs(u));
+[Ny,Nx] = size(u);
+uin = u;
+x=(-Nx/2+1:Nx/2)*dx;
+y=(-Ny/2+1:Ny/2)*dx;
+
+%% propagation 
+% TO DO -> Find proper distance from focus curve etc..
