@@ -16,3 +16,6 @@ We had a slight difficulty in determining d, it is related to the arbitrariness 
 For this reason, depending on the designation, we will have a slightly different result.</br>
 In our results, you can clearly see the Focus phase and also that there is focus. The curvature of the background is due to optical aberration due to the experiment. </br>
 Full time of launching the project was 126.283 s, however without circle detection it would be only about 4s. Circle detection is needed only for demonstrating reason so if the speed is necessary user can comment lines for circle detection. </br>
+
+## Refactor
+Wagrodzki_Sarnacki_Project_Final_Version_refactored.pdf - it is the newest refactored version
